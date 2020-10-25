@@ -6,12 +6,13 @@ import Spotify from "../../util/Spotify";
 
 import "./App.css";
 
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       searchResults: [],
-      playlistName: "My Playlist",
+      playlistName: "New Playlist",
       playlistTracks: [],
     };
 
@@ -62,6 +63,8 @@ export default class App extends React.Component {
       })
     })
   }
+
+
 
   render() {
     return (
