@@ -64,6 +64,9 @@ export default class App extends React.Component {
     })
   }
 
+  componentDidMount() {
+    Spotify.getAccessToken();
+  }
 
 
   render() {
